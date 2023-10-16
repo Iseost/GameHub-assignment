@@ -3,7 +3,6 @@
 body {
     min-width: 600px;
     margin: auto;
-    padding: 5px;
   }
   
   p, 
@@ -23,11 +22,38 @@ body {
   header, footer {
     background-color: #B6C0CB;
   }
-  
-  .container {
-    position: relative;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-top: 1rem;
     width: auto;
     height: 80px;
+  }
+
+  .GameHub_Logo {
+    height: 49px;
+    padding-left: 1rem;
+  }
+
+  .search {
+    padding-top: 27px;
+    padding-left: 2rem;
+  }
+
+  input {
+    border-radius: 50px;
+    border-style: none;
+    width: 139px;
+    height: 18px;
+  }
+  
+  .flex-header {
+    display: flex;
+    justify-content: start;
+    padding-left: 2rem;
+    padding-top: 1rem;
   }
   
   nav,
@@ -51,8 +77,11 @@ body {
     padding: 10px 20px;
     text-decoration: none;
   }
-  
-  
+
+  i {
+    color: #1B203D;
+  }
+
   .active {
     text-decoration: underline;
   }
@@ -63,20 +92,21 @@ body {
   
   .grey_backround {
     background-color: #F4F4F4;
-    width: 295px;
     height: auto
   }
   
-  .GameHub_Logo {
-    height: 49px;
-  }
-  
   .first_section {
+    display: flex;
+    justify-content: center;
     background-color: #1B203D;
+    width: auto;
+    height: 150px;
   }
   
   .section_content {
     text-align: center;
+    padding-top: 25px;
+    font-size: medium;
   }
   
   .content_text {
@@ -84,7 +114,9 @@ body {
   }
   
   .pacman {
-    height: 180px;
+    height: 140px;
+    padding-left: 1rem;
+    padding-top: 6px;
   }
   
   .cover {
@@ -104,12 +136,13 @@ body {
   .flex_container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #FFFFFF;
     width: 238px;
-    border-radius: 15%;
+    border-radius: 10%;
   }
   
-  .flex_container, p {
+  .flex_container p {
     text-align: left;
     padding-left: 10px;
   }
@@ -182,14 +215,22 @@ body {
     }
   
     nav a {
-      display: inline-block;
+      display: none;
     }
   
     .hamburger_icon {
       display: none;
     }
+
+    .deskop-nav {
+      display: inline-block;
+    }
+
+    .mobil-icons {
+      display: none;
+    }
   
-    .container {
+    header {
       height: 162px;
     }
   
@@ -200,13 +241,18 @@ body {
     body {
       max-width: 1450px;
     }
+
+    .first_section {
+      height: 428px;
+    }
   
     .GameHub_Logo {
       height: 140px;
     }
   
     .pacman {
-      height: 428px;
+      height: 399px
+      pad;
     }
   
     .grey_backround {

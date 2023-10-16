@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GameHub | Home</title>
-  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/13885ac67d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="container">
+  <header>
       <input type="checkbox" id="menu-checkbox">
       <label for="menu-checkbox" class="hamburger_icon"><i class="fas fa-bars"></i></label>
       <nav>
@@ -21,9 +21,23 @@
         <a href="contact.html">Contact us</a>
       </nav>
     <img src="./assets/images/GameHub_Logo.png" class="GameHub_Logo" alt="The GameHub Logo">
-    <input type="search" placeholder="Search">
+    <div class="search">
+      <input type="search" placeholder="Search">
+    </div>
+    <div>
+      <nav>
+        <i class="fas fa-dice-d20"></i>
+          <a class="deskop-nav" href="Games.html">Games</a>
+        <i class="fas fa-user"></i>
+          <a class="deskop-nav" href="about.html">About us</a>
+        <i class="fas fa-shopping-cart"></i>
+          <a class="deskop-nav" href="contact.html">Contact us</a>
+      </nav>
+    </div>
+    <div class="mobil-icons">
     <i class="fas fa-user"></i>
-    <i class="fas fa-user"></i>
+    <i class="fas fa-shopping-cart"></i>
+  </div>
   </header>
   <main class="grey_backround">
     <section class="first_section">
