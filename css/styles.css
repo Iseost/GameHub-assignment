@@ -19,6 +19,8 @@ body {
     } 
   }
   
+  /*header*/
+
   header, footer {
     background-color: #B6C0CB;
   }
@@ -85,14 +87,24 @@ body {
   .active {
     text-decoration: underline;
   }
+
+  /*main home*/
   
   main {
     background-color: white;
   }
   
-  .grey_backround {
+  .grey_background {
     background-color: #F4F4F4;
+    width: 300px;
     height: auto
+  }
+
+  .title {
+    text-align: center;
+    text-decoration: underline overline;
+    padding-top: 2em;
+    margin: auto;
   }
   
   .first_section {
@@ -131,31 +143,49 @@ body {
     width: auto;
   }
   
-  /***Games***/
+  /***Games home page***/
   
-  .flex_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FFFFFF;
-    width: 238px;
-    border-radius: 10%;
+  .grid_container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    max-width: 1000px;
+    margin: auto;
+    grid-gap: 5em;
+    justify-content: center;
   }
-  
-  .flex_container p {
-    text-align: left;
-    padding-left: 10px;
+
+  .grid_container h3 {
+    grid-column: -1/1;
+  }
+
+  .grid_container img {
+    grid-row: 1;
+    padding-top: 20px;
   }
   
   .container_item {
-    flex: 1;
-    margin: 15px;
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: white;
+    width: 240px;
+    height: 300px;
+    justify-content: center;
+    border-radius: 15%;
   } 
+
+  .container_item h3, a {
+    grid-row: auto;
+    padding-bottom: 10px;
+  }
   
   .sale {
     text-decoration: line-through;
     color: #E31D13;
   }
+
+  /*Games*/
+
+
   
   /***Product***/
   
@@ -178,6 +208,7 @@ body {
   
   .product_text {
     width: 243px;
+    text-align: center;
   }
   
   .aboutus_text {
@@ -255,13 +286,8 @@ body {
       pad;
     }
   
-    .grey_backround {
+    .grey_background {
       width: 1037px;
-    }
-  
-    .flex_container {
-      flex-direction: row;
-      width: 864px;
     }
   
     .contact-image {
