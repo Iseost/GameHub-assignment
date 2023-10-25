@@ -25,7 +25,7 @@ body {
     background-color: #B6C0CB;
   }
 
-  header {
+  header, footer{
     display: flex;
     flex-direction: row;
     padding-left: 1rem;
@@ -33,6 +33,7 @@ body {
     width: auto;
     height: 80px;
   }
+
 
   .GameHub_Logo {
     height: 49px;
@@ -188,9 +189,27 @@ body {
 
   
   /***Product***/
-  
+
+  .grid_product {
+    display: grid;
+    grid-template-rows: repeat(2, 8em);
+    margin: auto;
+    justify-content: center;
+  }
+
+  .product_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 12em 0 2em;
+  }
+
   .product_img_small, .product_img_shadow {
     height: 58px;
+  }
+
+  .product_img_shadow {
+    filter: opacity(0.5);
   }
   
   .cover_product {
@@ -205,10 +224,24 @@ body {
     width: auto;
     border-radius: 15%;
   }
+
+  .product_info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 240px;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15%;
+  }
+
   
   .product_text {
+    display: flex;
+    flex-direction: column;
     width: 243px;
-    text-align: center;
+    justify-content: center;
   }
   
   .aboutus_text {
@@ -235,7 +268,18 @@ body {
     height: 108px;
     border-radius: 25%;
   }
+
+  .grid_summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
   
+  .shipping_info {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+  }
+
   /***Media***/
   
   @media (min-width: 600px) {
