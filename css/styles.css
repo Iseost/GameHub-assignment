@@ -104,7 +104,7 @@ body {
   .title {
     text-align: center;
     text-decoration: underline overline;
-    padding-top: 2em;
+    padding: 2em 0;
     margin: auto;
   }
   
@@ -192,7 +192,7 @@ body {
 
   .grid_product {
     display: grid;
-    grid-template-rows: repeat(2, 8em);
+    grid-template-rows: auto;
     margin: auto;
     justify-content: center;
   }
@@ -201,7 +201,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 12em 0 2em;
+    padding: 2em 0 2em;
   }
 
   .product_img_small, .product_img_shadow {
@@ -241,7 +241,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 243px;
-    justify-content: center;
+    align-items: center;
   }
   
   .aboutus_text {
