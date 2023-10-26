@@ -164,15 +164,22 @@ body {
     padding-top: 20px;
   }
   
+
   .container_item {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 12em 2em 2em;
     background-color: white;
     width: 240px;
     height: 300px;
     justify-content: center;
     border-radius: 15%;
-  } 
+  }
+
+  .text_item_sale {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
 
   .container_item h3, a {
     grid-row: auto;
@@ -284,6 +291,14 @@ body {
     flex-direction: row;
     margin: 1em;
   }
+
+  /***Checkout Success***/
+
+  .success_grid {
+
+  }
+
+  
 
   /***Media***/
   
