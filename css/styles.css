@@ -255,6 +255,11 @@ body {
   
   
   /***Checkout***/
+
+  header .logo_checkout {
+    display: flex;
+    justify-content: center;
+  }
   
   .logo_checkout {
     height: 79px;
