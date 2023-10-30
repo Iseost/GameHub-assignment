@@ -134,7 +134,7 @@ body {
   
   .cover {
     height: 165px;
-    border-radius: 15%;
+    border-radius: 20%;
   }
   
   .pacman, 
@@ -146,7 +146,7 @@ body {
   
   /***Games home page***/
   
-  .grid_container {
+  .grid_container, .grid_checkout2 {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     max-width: 1000px;
@@ -232,17 +232,19 @@ body {
     border-radius: 15%;
   }
 
-  .product_info {
+  .product_info, .product_info_about {
     display: flex;
     flex-direction: column;
     background-color: white;
+  }
+
+  .product_info {
     width: 240px;
     height: 300px;
     justify-content: center;
     text-align: center;
     border-radius: 15%;
   }
-
   
   .product_text {
     display: flex;
@@ -251,9 +253,6 @@ body {
     align-items: center;
   }
   
-  .aboutus_text {
-    width: 236px;
-  }
   
   .product_text,
   .aboutus_text {
@@ -281,11 +280,18 @@ body {
     border-radius: 25%;
   }
 
-  .grid_summary {
+  .grid_checkout {
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 7em);
+    margin: auto;
+    justify-content: center;
+}
+
+  .grid_checkout2 {
+    margin: auto;
+    grid-gap: 2em;
   }
-  
+
   .shipping_info {
     display: flex;
     flex-direction: row;
@@ -294,8 +300,18 @@ body {
 
   /***Checkout Success***/
 
-  .success_grid {
+  
 
+  /***About & Contact us***/
+
+  .background_image_about {
+    background-image: url(../assets/images/carl-raw-m3hn2Kn5Bns-unsplash6.jpg);
+    background-repeat:repeat;
+  }
+
+  .product_info_about {
+    width: 257px;
+    padding-left: 1em;
   }
 
   
