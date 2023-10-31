@@ -387,11 +387,7 @@ body {
   footer {
     height: 105px;
   }
-
-  .footer_links {
-    display: flex;
-    flex-direction: column;
-  }
+  
 
   .logo_footer {
     padding-left: 275px;
@@ -426,6 +422,7 @@ body {
   
     header {
       height: 162px;
+      width: auto;
     }
   
     .cover {
@@ -436,6 +433,7 @@ body {
       max-width: 1450px;
     }
 
+
     .first_section {
       height: 428px;
     }
@@ -445,12 +443,24 @@ body {
     }
   
     .pacman {
-      height: 399px
-      pad;
+      height: 399px;
+    }
+
+    .content_text {
+      font-size: 65px;
     }
   
     .grey_background {
       width: 1037px;
+    }
+
+    .grid_container, .container_item {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container_item {
+      width: 288px;
+      height: 468px;
     }
   
     .contact-image {
