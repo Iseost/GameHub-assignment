@@ -18,6 +18,45 @@ body {
       font-family: 'Roboto';
     } 
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  .button_home, .button_add_cart, .button_confirm, .button_continue {
+    display: flex;
+    border-radius: 25px;
+    background: #1B203D;
+    text-decoration: none;
+    color: #F4F4F4;
+    margin-top: 1em;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .button_home {
+    width: 74px;
+    height: 26px;
+  }
+
+  .button_add_cart {
+    width: 198px;
+    height: 67px;
+    margin-left: 20px;
+    margin-bottom: 1em;
+  }
+
+  .button_confirm {
+    width: 109px;
+    height: 37px;
+  }
+
+  .button_continue {
+    width: 150px;
+    height: 40px;
+    margin-bottom: 2em;
+  }
   
   /*header*/
 
@@ -25,7 +64,7 @@ body {
     background-color: #B6C0CB;
   }
 
-  header, footer{
+  header {
     display: flex;
     flex-direction: row;
     padding-left: 1rem;
@@ -33,9 +72,9 @@ body {
     width: auto;
     height: 80px;
   }
+  
 
-
-  .GameHub_Logo {
+  .GameHub_Logo, .logo_footer {
     height: 49px;
     padding-left: 1rem;
   }
@@ -180,7 +219,6 @@ body {
 
   .container_item h3, a {
     grid-row: auto;
-    padding-bottom: 10px;
   }
   
   .sale {
@@ -343,6 +381,23 @@ body {
     text-align: start;
   }
 
+
+  /***Footer**/
+
+  footer {
+    height: 105px;
+  }
+
+  .footer_links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo_footer {
+    padding-left: 275px;
+    padding-right: 275px;
+
+  }
 
   /***Media***/
   
