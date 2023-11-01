@@ -1,7 +1,7 @@
 /***Home***/
 
 body {
-    min-width: 600px;
+    min-width: 601px;
     margin: auto;
   }
   
@@ -75,8 +75,8 @@ body {
   }
 
   .GameHub_Logo {
-    margin: 20px 0 0 -9em;
-    position: relative;
+    margin: 20px 0 0 22em;
+    position: absolute;
   }
 
   .search {
@@ -129,6 +129,14 @@ body {
   i {
     color: #1B203D;
   }
+
+  .navigaton_bar {
+    display: flex;
+    position: relative;
+    margin-left: 45em;
+    margin-top: -5em;
+  }
+
 
   .active {
     text-decoration: underline;
@@ -183,6 +191,7 @@ body {
   }
   
   .cover {
+    width: 128px;
     height: 165px;
     border-radius: 20%;
   }
@@ -444,7 +453,7 @@ body {
 
   /***Media***/
   
-  @media (min-width: 600px) {
+  @media (min-width: 601px) {
   
     nav {
       display: block;
@@ -468,12 +477,25 @@ body {
     }
   
     header {
+      min-width: 1440px;
       height: 162px;
     }
-  
-    .cover {
-      height: 384px;
+
+
+    .GameHub_Logo {
+      height: 140px;
+      margin-left: -6em;
+      position: relative;
     }
+
+
+    .search {
+      width: 510px;
+      height: 50px;
+      margin-top: 6em;
+      margin-left: 30em;
+    }
+    
   
     body {
       max-width: 1450px;
@@ -482,18 +504,17 @@ body {
 
     .first_section {
       height: 428px;
-    }
-  
-    .GameHub_Logo {
-      height: 140px;
+      min-width: 1440px;
     }
   
     .pacman {
       height: 399px;
+      padding-left: 30em;
     }
 
     .content_text {
       font-size: 65px;
+      padding-right: 8em
     }
   
     .grey_background {
@@ -505,11 +526,49 @@ body {
     }
 
     .container_item {
-      width: 288px;
-      height: 468px;
+      display: flex;
+      width: 350px;
+      height: 500px;
+      flex-direction: column;
+    }
+
+    .cover {
+      height: 384px;
+      width: 299px;
+      padding-left: 1em;
     }
   
     .contact-image {
       height: 283;
     }
-  }
+
+    footer {
+      min-width: 1440px;
+      height: 162px;
+    }
+
+    .logo_footer {
+      width: 181px;
+      height: 114px;
+      padding-left: 11em;
+    }
+
+    .links_about {
+      flex-direction: row;
+      gap: 3em;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .icons_footer {
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      padding-left: 18em;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    }
+
+  
