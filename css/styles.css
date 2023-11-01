@@ -14,9 +14,6 @@ body {
   ol, 
   li {
     color: #1B203D;
-    @font-face {
-      font-family: 'Roboto';
-    } 
   }
 
   a {
@@ -61,14 +58,12 @@ body {
   /*header*/
 
   header, footer {
+    display: grid;
     background-color: #B6C0CB;
   }
 
   header {
-    display: flex;
-    flex-direction: row;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    justify-content: center;
     width: auto;
     height: 80px;
   }
@@ -79,20 +74,34 @@ body {
     padding-left: 1rem;
   }
 
+  .GameHub_Logo {
+    margin: 20px 0 0 -9em;
+    position: relative;
+  }
+
   .search {
-    width: 139px;
+    position: absolute;
+    margin: 4em 25em;
+    width: 155px;
     height: 18px;
     border-radius: 50px;
     background: #F4F4F4;
     border-style: none;
   }
 
-  
-  .flex-header {
+  .mobil-icons {
     display: flex;
-    justify-content: start;
-    padding-left: 2rem;
-    padding-top: 1rem;
+    flex-direction: row;
+    position: absolute;
+    margin: 25px 26em;
+    gap: 25px;
+    
+  }
+  
+  .hamburger_icon {
+    position: absolute;
+    margin: 15px 3em;
+    font-size: x-large;
   }
   
   nav,
@@ -153,9 +162,11 @@ body {
   }
   
   .section_content {
+    margin-top: 1em;
+    position: relative;
     text-align: center;
-    padding-top: 25px;
     font-size: medium;
+    margin-right: 11em;
   }
   
   .content_text {
@@ -163,8 +174,9 @@ body {
   }
   
   .pacman {
+    position: absolute;
     height: 140px;
-    padding-left: 1rem;
+    padding-left: 16em;
     padding-top: 6px;
   }
   
@@ -297,7 +309,13 @@ body {
   
   /***Checkout***/
 
-  header .logo_checkout {
+  .header_checkout {
+    background-image: var(#B6C0CB);
+    height: 448.277px;
+    transform: rotate(-24.307deg);
+  }
+
+  .logo_checkout {
     display: flex;
     padding-left: 225px;
     padding-right: 225px;
@@ -343,6 +361,7 @@ body {
 
   /***Checkout Success***/
 
+
   .checkout_product {
     display: flex;
     flex-direction: column;
@@ -387,12 +406,30 @@ body {
   footer {
     height: 105px;
   }
+
+  .links_about {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin: 1em 4em;
+    gap: 1em;
+    font-size: larger;
+    font-weight: bold;
+  }
   
 
   .logo_footer {
-    padding-left: 275px;
-    padding-right: 275px;
+    position: relative;
+    margin: 2em 15em;
 
+  }
+
+  .icons_footer {
+    display: grid;
+    grid-template-columns: repeat(2, 5em);
+    position: absolute;
+    margin: 7px 25em;
+    font-weight: bold;
   }
 
   /***Media***/
@@ -422,7 +459,6 @@ body {
   
     header {
       height: 162px;
-      width: auto;
     }
   
     .cover {

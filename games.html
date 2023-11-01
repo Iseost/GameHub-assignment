@@ -11,20 +11,32 @@
   <script src="https://kit.fontawesome.com/13885ac67d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="container">
-      <input type="checkbox" id="menu-checkbox">
-      <label for="menu-checkbox" class="hamburger_icon"><i class="fas fa-bars"></i></label>
-      <nav>
-        <a href="index.html">Home</a>
-        <a class="active" href="Games.html">Games</a>
-        <a href="about.html">About us</a>
-        <a href="contact.html">Contact us</a>
-      </nav>
-      <a href="index.html"><img src="./assets/images/GameHub_Logo.png" class="GameHub_Logo" alt="The GameHub Logo"></a>
-      <input class="search" type="search" placeholder="Search">
-    <i class="fas fa-user"></i>
-    <i class="fas fa-shopping-cart"></i>
-  </header>
+  <header>
+    <input type="checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="hamburger_icon"><i class="fas fa-bars"></i></label>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="Games.html">Games</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+  <a href="index.html"><img src="./assets/images/GameHub_Logo.png" class="GameHub_Logo" alt="The GameHub Logo"></a>
+  <input class="search" type="search" placeholder="Search">
+  <div>
+    <nav>
+      <i class="fas fa-dice-d20"></i>
+        <a class="deskop-nav" href="Games.html">Games</a>
+      <i class="fas fa-user"></i>
+        <a class="deskop-nav" href="about.html">About us</a>
+      <i class="fas fa-shopping-cart"></i>
+        <a class="deskop-nav" href="contact.html">Contact us</a>
+    </nav>
+  </div>
+  <div class="mobil-icons">
+  <i class="fas fa-user"></i>
+  <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+</div>
+</header>
   <main>
     <h1 class="title grey_background">Games</h1>
     <section class="grid_container grey_background">
@@ -85,15 +97,16 @@
     </section>
   </main>
   <footer>
-    <div>
+    <div class="links_about">
       <a href="about.html">About us</a>
       <a href="contact.html">Contact us</a>
     </div>
-    <img src="./assets/images/GameHub_Logo.png" class="GameHub_Logo" alt="logo footer">
-    <div>
-      <i class="fa-brands fa-discord"></i>
-      logo instagram
-      logo facebook
+    <img src="./assets/images/GameHub_Logo.png" class="logo_footer" alt="logo_footer">
+    <div class="icons_footer">
+      <p>Discord</p>
+      <p>Instagram</p>
+      <p>Facebook</p>
+      <p>Twitter/X</p>
     </div>
   </footer>
 </body>
