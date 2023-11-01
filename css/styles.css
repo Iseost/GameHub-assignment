@@ -151,6 +151,8 @@ body {
     text-decoration: underline overline;
     padding: 2em 0;
     margin: auto;
+    z-index: 2;
+    position: relative;
   }
   
   .first_section {
@@ -310,15 +312,19 @@ body {
   /***Checkout***/
 
   .header_checkout {
-    background-image: var(#B6C0CB);
     height: 448.277px;
     transform: rotate(-24.307deg);
+    position: relative;
+    z-index: 2;
+    margin: -9em;
   }
 
   .logo_checkout {
     display: flex;
-    padding-left: 225px;
-    padding-right: 225px;
+    margin-top: 11em;
+    align-content: center;
+    justify-content: center;
+    transform: rotate(20deg);
   }
   
   .logo_checkout {
@@ -339,6 +345,8 @@ body {
     grid-template-columns: repeat(2, 7em);
     margin: auto;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
   .grid_checkout2 {
@@ -372,6 +380,8 @@ body {
   .checkout_grid {
     justify-items: center;
     padding-top: 2em;
+    position: relative;
+    z-index: 2;
   }
 
   /***About & Contact us***/
