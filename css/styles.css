@@ -38,6 +38,9 @@ body {
   }
 
   .button_add_cart {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
     width: 198px;
     height: 67px;
     margin-left: 20px;
@@ -75,7 +78,7 @@ body {
   }
 
   .GameHub_Logo {
-    margin: 20px 0 0 22em;
+    margin: 20px 0 0 28em;
     position: absolute;
   }
 
@@ -133,9 +136,21 @@ body {
   .navigaton_bar {
     display: flex;
     position: relative;
-    margin-left: 45em;
+    margin-left: 60em;
     margin-top: -5em;
   }
+
+  .icon_desktop, .icon_desktop2, .icon_desktop3 {
+    position: absolute;
+    margin-left: 2em;
+}
+  .icon_desktop2 {
+    margin-left: 116px;
+}
+
+  .icon_desktop3 {
+    margin-left: 185px;
+}
 
 
   .active {
@@ -208,7 +223,6 @@ body {
   .grid_container, .grid_checkout2 {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-    max-width: 1000px;
     margin: auto;
     grid-gap: 5em;
     justify-content: center;
@@ -244,14 +258,25 @@ body {
     grid-row: auto;
   }
   
+
+  /*Games*/
+
+  .small_title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .price_games {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
   .sale {
     text-decoration: line-through;
     color: #E31D13;
   }
-
-  /*Games*/
-
-
   
   /***Product***/
 
@@ -315,6 +340,12 @@ body {
   .product_text,
   .aboutus_text {
     height: auto;
+  }
+
+  .price_product {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
   }
   
   
@@ -470,6 +501,8 @@ body {
 
     .deskop-nav {
       display: inline-block;
+      position: relative;
+      margin: 1em 0 1em;
     }
 
     .mobil-icons {
@@ -481,10 +514,16 @@ body {
       height: 162px;
     }
 
+    .header_checkout {
+      width: 1785.105px;
+      height: 1015.424px;
+      transform: rotate(-24.307deg);
+    }
+
 
     .GameHub_Logo {
       height: 140px;
-      margin-left: -6em;
+      margin-left: 0em;
       position: relative;
     }
 
@@ -493,7 +532,8 @@ body {
       width: 510px;
       height: 50px;
       margin-top: 6em;
-      margin-left: 30em;
+      margin-left: 465px;
+      margin-right: 465px;
     }
     
   
@@ -514,15 +554,30 @@ body {
 
     .content_text {
       font-size: 65px;
-      padding-right: 8em
+      padding-right: 8em;
     }
   
     .grey_background {
       width: 1037px;
+      margin-left: 200px;
+      padding-bottom: 2em;
     }
 
     .grid_container, .container_item {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid_container {
+      justify-content: center;
+    }
+
+    .grid_container_desk, .grid_container_game {
+      display: grid;
+      grid-gap: 0;
+    }
+
+    .grid_container_game {
+      grid-gap: 1em;
     }
 
     .container_item {
@@ -530,12 +585,126 @@ body {
       width: 350px;
       height: 500px;
       flex-direction: column;
+      margin-left: 5em;
     }
+
+    .container_item_games {
+      width: 288px;
+      height: 468px;
+      margin: 0px;
+      margin-left: 2em;
+    }
+
 
     .cover {
       height: 384px;
       width: 299px;
-      padding-left: 1em;
+      margin-left: 25px;
+      margin-bottom: 6em;
+    }
+
+    .cover_games {
+      width: 236px;
+      height: 303px;
+      position: absolute;
+      margin-bottom: 7em;
+    }
+
+    .small_title, .price_games, .sale {
+      font-style: normal;
+      position: absolute;
+    }
+
+    .small_title {
+      font-size: 25px;
+      font-weight: 400;
+      margin-top: 12em;
+      margin-left: 1em;
+    }
+  
+    .price_games, .price_games_sale {
+      font-size: 40px;
+      font-weight: 600;
+      margin-top: 11em;
+      margin-left: 25px;
+    }
+
+    .price_games_sale {
+      margin-left: 4em;
+
+    }
+
+
+    .sale {
+      font-size: 36px;
+      margin-top: 441px;
+      margin-left: 25px;
+    }
+
+
+    .button_home {
+      width: 119px;
+      height: 35px;
+      margin-left: 2em;
+      position: absolute;
+      margin-top: 28em;
+    }
+
+    .game_name {
+      position: absolute;
+      margin-top: 20em;
+      margin-left: 2em;
+    }
+
+    
+
+    .grid_product {
+      grid-template-columns: auto auto auto;
+      padding-bottom: 2em;
+    }
+
+    .product_container {
+      flex-direction: column;
+      position: absolute;
+      margin-left: 2em;
+      margin-top: -2em;
+      gap: 5px;
+    }
+
+    .cover_product {
+      width: 464px;
+      height: 596px;
+      position: relative;
+      margin-right: 12em;
+    }
+
+    .product_img_small, .product_img_shadow {
+      width: 116px;
+      height: auto;
+    }
+
+    .product_info {
+      position: absolute;
+      margin-left: 43em;
+      width: 330px;
+      height: 404px;
+    }
+
+    .button_add_cart {
+      margin-left: 65px;
+      font-size: 36px;
+    }
+
+    .product_text {
+      width: 880px;
+      height: 570px;
+      display: block;
+    }
+
+    .price_product {
+      font-size: 48px;
+      text-decoration: underline;
+      text-underline-position: under;
     }
   
     .contact-image {
@@ -545,6 +714,7 @@ body {
     footer {
       min-width: 1440px;
       height: 162px;
+      margin-bottom: 2em;
     }
 
     .logo_footer {
