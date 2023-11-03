@@ -11,25 +11,48 @@
   <script src="https://kit.fontawesome.com/13885ac67d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header_checkout">
-    <a href="index.html"><img src="./assets/images/GameHub_Logo.png" class="logo_checkout" alt="GameHub_Logo"></a>
-  </header>
+  <header>
+    <input type="checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="hamburger_icon"><i class="fas fa-bars"></i></label>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="Games.html">Games</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+  <a href="index.html"><img src="./assets/images/GameHub_Logo.png" class="GameHub_Logo" alt="The GameHub Logo"></a>
+  <input class="search" type="search" placeholder="Search">
+  <div>
+    <nav class="navigaton_bar">
+      <i class="fas fa-dice-d20 icon_desktop"></i>
+        <a class="deskop-nav" href="Games.html">Games</a>
+      <i class="fas fa-user icon_desktop2"></i>
+        <a class="deskop-nav" href="">LogIn</a>
+      <i class="fas fa-shopping-cart icon_desktop3"></i>
+        <a class="deskop-nav" href="checkout.html">Cart</a>
+    </nav>
+  </div>
+  <div class="mobil-icons">
+  <i class="fas fa-user"></i>
+  <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+</div>
+</header>
   <main>
-    <h1 class="title grey_background">Order summary</h1>
-    <section class="grey_background grid_checkout">
+    <h1 class="title_checkout order grey_background">Order summary</h1>
+    <section class="grey_background grid_checkout grid_checkout_desk">
       <div>
         <img src="./assets/images/GameHub_covers10.jpg" class="checkout_img" alt="The game Forge Legend">
       </div>
-      <div>
+      <div class="checkout_total">
         <p>599,-</p>
         <p>Forge Legend</p>
         <p>-1-+</p>
         <p>Total 599,-</p>
       </div>
     </section>
-    <h2 class="title grey_background">Shipping info</h2>
-    <section class="grey_background grid_checkout2">
-      <div>
+    <h2 class="title_checkout grey_background">Shipping info</h2>
+    <section class="grey_background grid_checkout2 grid_checkout_desk">
+      <div class="shipping_container">
         <input class="shipping_info" type="text" placeholder="First name">
         <input class="shipping_info" type="text" placeholder="Last name">
         <input class="shipping_info" type="text" placeholder="Address">
@@ -37,7 +60,7 @@
         <input class="shipping_info" type="text" placeholder="City">
         <input class="shipping_info" type="email" placeholder="Email">
       </div>
-      <h2 class="title">Payment</h2>
+      <h2 class="title_checkout">Payment</h2>
       <div>
         <i class="fas fa-cc-paypal"></i>
         <i class="fa-cc-visa"></i>

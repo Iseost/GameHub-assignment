@@ -11,9 +11,32 @@
   <script src="https://kit.fontawesome.com/13885ac67d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header_checkout">
-    <a href="index.html"><img src="./assets/images/GameHub_Logo.png" class="logo_checkout" alt="GameHub_Logo"></a>
-  </header>
+  <header>
+    <input type="checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="hamburger_icon"><i class="fas fa-bars"></i></label>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="Games.html">Games</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+  <a href="index.html"><img src="./assets/images/GameHub_Logo.png" class="GameHub_Logo" alt="The GameHub Logo"></a>
+  <input class="search" type="search" placeholder="Search">
+  <div>
+    <nav class="navigaton_bar">
+      <i class="fas fa-dice-d20 icon_desktop"></i>
+        <a class="deskop-nav" href="Games.html">Games</a>
+      <i class="fas fa-user icon_desktop2"></i>
+        <a class="deskop-nav" href="">LogIn</a>
+      <i class="fas fa-shopping-cart icon_desktop3"></i>
+        <a class="deskop-nav" href="checkout.html">Cart</a>
+    </nav>
+  </div>
+  <div class="mobil-icons">
+  <i class="fas fa-user"></i>
+  <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+</div>
+</header>
   <main>
     <section class="grey_background grid_product checkout_grid">
       <div class="product_info">

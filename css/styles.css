@@ -44,7 +44,8 @@ body {
     width: 198px;
     height: 67px;
     margin-left: 20px;
-    margin-bottom: 1em;
+    position: absolute;
+    margin-top: 3em;
   }
 
   .button_confirm {
@@ -61,6 +62,7 @@ body {
   /*header*/
 
   header, footer {
+    min-width: 601px;
     display: grid;
     background-color: #B6C0CB;
   }
@@ -169,13 +171,18 @@ body {
     height: auto
   }
 
-  .title {
+  .title, .title_checkout {
     text-align: center;
     text-decoration: underline overline;
+    text-underline-position: below;
     padding: 2em 0;
     margin: auto;
-    z-index: 2;
-    position: relative;
+  }
+
+  .title_checkout {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
   }
   
   .first_section {
@@ -294,6 +301,15 @@ body {
     padding: 2em 0 2em;
   }
 
+  .text_storage {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    position: absolute;
+    margin-left: 27px;
+    margin-bottom: 7em;
+  }
+
   .product_img_small, .product_img_shadow {
     height: 58px;
   }
@@ -346,6 +362,20 @@ body {
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
+    text-decoration: underline;
+    text-underline-position: under;
+    position: relative;
+    margin-right: 3em;
+    margin-bottom: 6em;
+  }
+
+  .Continuing_text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 12em;
+    margin-left: 50px;
   }
   
   
@@ -373,7 +403,10 @@ body {
   
   .checkout_img {
     height: 109px;
-  }
+    margin-left: 2em;
+    margin-top: 0;
+}
+
   
   .contact-image {
     height: 108px;
@@ -450,6 +483,18 @@ body {
     text-align: start;
   }
 
+  .title_aboutus {
+
+  }
+
+  .text_aboutus {
+
+  }
+
+  .happy_gaming_text {
+
+  }
+
 
   /***Footer**/
 
@@ -514,12 +559,6 @@ body {
       height: 162px;
     }
 
-    .header_checkout {
-      width: 1785.105px;
-      height: 1015.424px;
-      transform: rotate(-24.307deg);
-    }
-
 
     .GameHub_Logo {
       height: 140px;
@@ -561,6 +600,17 @@ body {
       width: 1037px;
       margin-left: 200px;
       padding-bottom: 2em;
+    }
+
+    .title {
+      font-size: 48px;
+    }
+
+    .title_checkout {
+      text-align: left;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 400;
     }
 
     .grid_container, .container_item {
@@ -693,6 +743,15 @@ body {
     .button_add_cart {
       margin-left: 65px;
       font-size: 36px;
+      position: absolute;
+      margin-top: 3em;
+    }
+
+    .Continuing_text {
+      font-size: 21px;
+      position: absolute;
+      margin-left: 74px;
+      margin-top: 10em;
     }
 
     .product_text {
@@ -703,13 +762,77 @@ body {
 
     .price_product {
       font-size: 48px;
-      text-decoration: underline;
-      text-underline-position: under;
+      position: absolute;
+      margin-left: 1em;
+      margin-bottom: 6em;
+    }
+
+    .text_storage {
+      font-size: 16px;
+      position: absolute;
+      margin-left: 3em;
+      margin-bottom: 10em;
+    }
+
+    .checkout_img {
+      width: 140px;
+      height: 180px;
+      position: absolute;
+      margin-left: 41em;
+    }
+
+    .grid_checkout_desk {
+      grid-template-rows: repeat(2,1fr);
+    }
+
+    .checkout_total {
+      margin-left: 40em;
+      margin-top: -1em;
+      font-size: 21px;
+    }
+
+    .shipping_container {
+      position: absolute;
+      margin-bottom: 15em;
+    }
+  
+
+    .shipping_info {
+      width: 374px;
+      height: 38px;
+      font-size: 21px;
+    }
+
+    
+    .background_image_about {
+      background-image: url(../assets/images/carl-raw-m3hn2Kn5Bns-unsplash.jpg);
+    }
+
+    .product_info_about {
+      border-radius: 50px;
+      width: 880px;
+      height: 1560px;
+      border-radius: 50px;
+      text-align: left;
+      padding-top: 5em;
+    }
+
+    .title_aboutus {
+      font-size: 23px;
+    }
+  
+    .text_aboutus {
+      font-size: 21px;
+    }
+  
+    .happy_gaming_text {
+      font-size: 25px;
     }
   
     .contact-image {
       height: 283;
     }
+
 
     footer {
       min-width: 1440px;
@@ -720,7 +843,7 @@ body {
     .logo_footer {
       width: 181px;
       height: 114px;
-      padding-left: 11em;
+      padding-left: 25em;
     }
 
     .links_about {
@@ -728,13 +851,14 @@ body {
       gap: 3em;
       padding-top: 50px;
       padding-bottom: 50px;
+      margin-left: 15em;
     }
 
     .icons_footer {
       display: flex;
       flex-direction: row;
       gap: 2em;
-      padding-left: 18em;
+      padding-left: 33em;
       padding-top: 50px;
       padding-bottom: 50px;
     }
