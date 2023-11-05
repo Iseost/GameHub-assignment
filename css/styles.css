@@ -524,17 +524,17 @@ body {
 
   .links_about {
     display: flex;
-    position: absolute;
-    flex-direction: column;
-    margin: 1em 4em;
-    gap: 1em;
-    font-size: larger;
+    gap: 2em;
+    font-size: 16px;
     font-weight: bold;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-left: 6em;
   }
   
 
   .logo_footer {
-    position: relative;
+    position: absolute;
     margin: 2em 15em;
 
   }
@@ -947,11 +947,9 @@ body {
 
     .links_about {
       flex-direction: row;
+      padding: 72px 0;
+      margin: 0 13em;
       gap: 3em;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      margin-left: 15em;
-      font-size: 21px;
     }
 
     .icons_footer {
