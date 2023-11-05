@@ -748,7 +748,14 @@ body {
 
     .flex_checkout {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flex_checkout p {
+      font-size: 35px;
+      position: absolute;
+      margin-top: 10em;
     }
 
     .product_info {
@@ -773,7 +780,7 @@ body {
       width: 464px;
       height: 596px;
       position: relative;
-      margin-right: 12em;
+      margin-right: 5em;
     }
 
     .product_img_small, .product_img_shadow {
@@ -783,7 +790,7 @@ body {
 
     .product_info {
       position: absolute;
-      margin-left: 43em;
+      margin-left: 690px;
       width: 330px;
       height: 404px;
     }
@@ -880,6 +887,20 @@ body {
       width: 331px;
       height: 112px;
       font-size: 36px;
+    }
+
+    .info_checkout h1 {
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    .info_checkout h3, .grid_product {
+      font-size: 32px;
+      font-weight: 400;
+    }
+
+    .info_checkout p {
+      font-size: 21px;
     }
     
     .background_image_about {
