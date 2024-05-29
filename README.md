@@ -1,6 +1,6 @@
 # GameHub-assignment
 
-![Image of top of the webpage](image.png)
+![Image of top of the webpage](assets/image.png)
 
 ## Description
 
